@@ -1,0 +1,200 @@
+main {
+    .header-section {
+        background-image: url(/accets/header_bg.jpg);
+        background-position: center;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        &::after {
+            content: '';
+            border-top: 4.84vw solid #f4f4f4;
+            border-right: 100vw solid transparent;
+            display: block;
+            position: relative;
+            background: transparent !important;
+            border-top-color: transparent !important;
+            border-right-color: #FFF !important;
+            z-index: 1;
+        }
+
+        header {
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            z-index: 9999;
+            overflow: hidden;
+
+            &.sticky-header {
+                background-color: $bg-black-color;
+                height: 4rem;
+                position: fixed;
+                width: 100%;
+                transition: height 0.3s ease;
+                z-index: 999;
+            }
+
+            nav {
+                width: 91%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .page-links {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+
+                    .list-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+
+                        &.toggle-list {
+                            height: 0;
+                            padding: 0 0;
+                        }
+
+                        &>li {
+                            &>a {
+                                color: $text-white-color;
+                                font-size: 0.805rem;
+                                font-weight: 500;
+                                padding: 10px 0;
+
+                                &:hover {
+                                    color: $primary-text-color;
+                                }
+                            }
+                        }
+                    }
+
+                    .button {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        &>.top-btn {
+                            color: $text-white-color;
+                            font-size: 0.740rem;
+                            font-weight: 600;
+                            padding: 6px 23px;
+                            border-radius: 50px;
+                            text-transform: uppercase;
+                            background-image: linear-gradient(150deg, $primary-text-color 0%, $primary-text-color 30%, $primary-text-color 70%, $primary-text-color 100%);
+                            background-color: $primary-text-color;
+
+                            &.box-shadow {
+                                box-shadow: 0 0 8px $primary-text-color;
+                            }
+                        }
+
+                        .menu {
+                            color: $text-white-color;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            font-weight: 600;
+                            display: none;
+
+                            &>i {
+                                background-image: linear-gradient(150deg, $primary-text-color 0%, $primary-text-color 30%, $primary-text-color 70%, $primary-text-color 100%);
+                                background-color: $primary-text-color;
+                                padding: 9px 19px;
+                                border-radius: 15px;
+
+                                &.box-shadow2 {
+                                    box-shadow: 0 0 8px $primary-text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// =========Media Query For (Medium Devices)==========>
+@media screen and (max-width: 900px) {
+    main {
+        .header-section {
+            header {
+
+                overflow: hidden;
+                position: relative;
+
+                nav {
+                    width: $container-md;
+                    .page-links {
+                        .list-item {
+                            flex-direction: column;
+                            background-color: $text-white-color;
+                            gap: 0.6rem;
+                            position: fixed;
+                            align-items: flex-start;
+                            top: 70px;
+                            width: 100%;
+                            left: 0;
+                            padding: 20px 0;
+                            box-shadow: 0 2px 10px rgba($bg-black-color, 0.2);
+                            overflow: hidden;
+                            transition: all 0.4s ease;
+                            height: 270px;
+
+
+                            &>li {
+                                width: 93%;
+                                padding: 5px 0 5px 4.5%;
+                                border-bottom: 1px solid #dadada;
+
+                                &>a {
+                                    color: $primary-text-color;
+                                    font-weight: 600;
+                                    font-size: 0.9rem;
+
+                                }
+                            }
+                        }
+
+                        .button {
+                            .menu {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// =========Media Query For (Small Devices)==========>
+@media screen and (max-width: 600px) {
+    main {
+        .header-section {
+            header {
+                nav {
+                    width: $container-sm;
+
+                    .page-links {
+                        .button {
+                            .top-btn {
+                                font-size: 0.7rem;
+                                font-weight: 600;
+                                padding: 5px 19px;
+                            }
+
+                            .menu {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

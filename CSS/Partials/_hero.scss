@@ -1,0 +1,270 @@
+main {
+    .header-section {
+        .container {
+            .hero-row {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                padding-top: 3rem;
+
+                .left-column {
+                    padding-top: 7rem;
+
+                    &>p {
+                        margin: 0;
+                    }
+
+                    .hero-title {
+                        &>h1 {
+                            color: $text-white-color;
+                            padding-bottom: 1rem;
+
+                            &>span {
+                                font-size: 1.6rem;
+                                font-family: $latest-font;
+                                text-transform: capitalize;
+                                transform: rotate(-15deg);
+                                display: inline-block;
+                                padding-left: 10px;
+                                position: relative;
+
+                                &::after {
+                                    transform: scaleY(-1) rotate(3deg);
+                                }
+
+                                &.highlight-line {
+                                    &::after {
+                                        position: absolute;
+                                        content: '';
+                                        background: url(/accets/pencil-blue-line.png) no-repeat;
+                                        background-size: 100% auto;
+                                        width: 75px;
+                                        height: 0.57rem;
+                                        bottom: -10px;
+                                        left: 10px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        &>p {
+                            width: 90%;
+                            color: rgba($text-white-color, 0.6);
+
+                            &>a {
+                                padding-left: 5px;
+                                font-size: 0.8rem;
+                                color: $text-white-color;
+                                text-transform: uppercase;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+
+                                &>i {
+                                    padding-left: 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    .vedio-btn {
+                        display: flex;
+                        width: 60%;
+                        gap: 1rem;
+                        align-items: center;
+
+                        .play-btn {
+                            font-size: 1.2rem;
+                            color: $text-white-color;
+                            cursor: pointer;
+                            padding: 10px;
+                            background-color: $text-white-color;
+                            border-radius: 50px;
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            z-index: 99;
+                            transition: scale 0.3s;
+                            box-shadow: 0 0 5px rgba($text-white-color, 0.1);
+
+                            &:hover {
+                                scale: 1.1;
+                            }
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                width: 60px;
+                                height: 60px;
+                                background-color: rgba($text-white-color, 0.1);
+                                border-radius: 50px;
+                                z-index: -1;
+                            }
+
+                            &>i {
+                                color: $primary-text-color;
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        &>a {
+                            color: $text-white-color;
+                            text-transform: capitalize;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .right-column {
+                    padding: 2rem 0 4rem 0;
+
+                    .vedio-frame {
+                        width: 100%;
+                        height: 100%;
+                        background-color: $text-white-color;
+                        padding: 10px;
+
+                        &>iframe {
+                            width: 100%;
+                            height: 400px;
+                            z-index: 999;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .side-poster {
+        width: 40%;
+        position: relative;
+        z-index: 4;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2rem;
+        top: -102px;
+
+        &>.stars {
+            color: $bg-black-color;
+            font-size: 1.5rem;
+            padding-bottom: 10px;
+            padding-left: 9rem;
+            width: 100%;
+
+        }
+
+        &>h2 {
+            font-size: 1.7rem;
+            color: $text-white-color;
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: linear-gradient(150deg, $primary-text-color 0%, $primary-text-color 30%, #0088cc 70%, #0088cc 100%);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            padding: 0 20px 20px 20px;
+            left: 0;
+            top: 0;
+            border-radius: 5px;
+        }
+
+        &>p {
+            color: rgba($text-white-color, 0.6);
+        }
+    }
+}
+
+// =========Media Query For (Medium Devices)==========>
+@media screen and (max-width: 900px) {
+    main {
+        .header-section {
+            .container {
+                width: 86%;
+
+                .hero-row {
+                    grid-template-columns: 1fr;
+                    padding-top: 0;
+
+                    .right-column {
+                        padding: 2rem 0 7rem 0;
+
+                    }
+                }
+            }
+        }
+
+        .side-poster {
+            width: 50%;
+        }
+    }
+}
+
+// =========Media Query For (Small Devices)==========>
+@media screen and (max-width: 600px) {
+    main {
+        .header-section {
+            .container {
+                width: $container-sm;
+
+                .hero-row {
+                    margin-top: -2rem;
+
+                    .left-column {
+                        .hero-title {
+                            width: 100%;
+                            padding-right: 1rem;
+
+                            &>h1 {
+                                font-size: 2rem;
+
+                                span {
+                                    font-size: 1.3rem;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .right-column {
+                        padding-bottom: 15rem;
+                    }
+                }
+            }
+        }
+
+        .side-poster {
+            width: 100%;
+            align-items: center;
+            top: -178px;
+
+            &>.stars {
+                font-size: 1.3rem;
+            }
+
+            &>h2 {
+                font-size: 1.3rem;
+            }
+
+            &>p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

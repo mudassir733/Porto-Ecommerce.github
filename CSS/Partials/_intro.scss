@@ -1,0 +1,350 @@
+main{
+    #intro-section{
+        margin-top: -3rem;
+        .container{
+            .intro-title{
+                text-align: center;
+                &>h2{
+                    width: 34%;
+                    margin: 0 auto;
+                    padding-bottom: 10px;
+                }
+                &>.primary-text{
+                    letter-spacing: 1.6px;
+                    text-transform: none;
+                    font-size: 1.1rem;
+                    &>span{
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            background: url(/accets/pencil-blue-line.png) no-repeat;
+                            width: 120px;
+                            height: 1rem;
+                            background-size: 100% auto;
+                            left: 0;
+                            bottom: -15px;
+                        }
+                    }
+                }
+            }
+            .paragraph{
+                text-align: center;
+                padding-top: 1.5rem;
+                &>p{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            .counter-row{
+                padding: 3rem 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                width: 60%;
+                margin: 0 auto;
+                place-items: center;
+                .counter-column{
+                    text-align: center;
+                    &>h2{
+                        font-size: 3.7rem;
+                    }
+                    &>p{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+                    &>a{
+                        font-size: 1.2rem;
+                        color: $bg-black-color;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 5px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        
+                    }
+                }
+            }
+            .intro-image{
+                padding-top: 2rem;
+                text-align: center;
+                position: relative;
+                &>img{
+                    box-shadow: 2px 2px 40px rgba($bg-black-color, 0.2);
+                }
+                &>.intro-image2{
+                    position: absolute;
+                    top: 0;
+                    &>img{
+                        box-shadow: 1px 1px 30px rgba($bg-black-color, 0.2);
+
+                    }
+                }
+                &>.intro-image3{
+                    position: absolute;
+                    right: 0;
+                    top: 25%;
+                    &>img{
+                        box-shadow: 1px 1px 30px rgba($bg-black-color, 0.2);
+
+                    }
+                }
+            }
+        }
+    }
+    #themes-section{
+        background-color: #f4f4f4;
+        margin-top: -25%;
+        padding: 30% 0 4rem 0;
+        &>.container{
+            .themes-row{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+                padding-bottom: 4rem;
+                border-bottom: 1px solid #dadada;
+                .text-column{
+                    &>h3{
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                    }
+                    &>p{
+                        padding-top: 10px;
+                    }
+                }
+                .icons-row{
+                    display: flex;
+                    align-items:center;
+                    flex-direction: column;
+                    text-align: center;
+                    .icons{
+                        background: url(/accets/icons.png) no-repeat;
+                        width: 80px;
+                        height: 80px;
+                        &.icon-1{
+                            background-position: -10px -10px;
+                        }
+                        &.icon-2{
+                            background-position: -110px -10px;
+                        }
+                        &.icon-3{
+                            background-position: -210px -10px;
+                        }
+                    }
+                    &>h4{
+                        font-size: 1.2rem;
+                        padding-top: 10px;
+                        width: 80%; 
+                    }
+                }
+            }
+            .top-extension-div{
+                padding-top: 3rem;
+                text-align: center;
+                &>p{
+                    width: 65%;
+                    margin: 17px auto;
+                }
+
+
+            }
+           
+        }
+       
+    }
+    #reason-proto{
+        background-image: url(/accets/reason_bg.png);
+        height: 100vh;
+        width: 100%;
+        margin-top: -30%;
+        &>.container{
+             position: relative;
+             padding-top: 18%;
+            .dots-image{
+                position: absolute;
+                top: 175px;
+                left: 107px;
+                
+            }
+            .reason-proto-row{
+                padding-top: 8rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem 8rem;
+                width: 80%;
+                margin: 0 auto;
+                place-items: center;
+            }
+        }
+    }
+}
+// =========Media Query For (Medium Devices)==========>
+@media screen and (max-width: 900px) {
+    main{
+        #intro-section{
+            .container{
+                width: $container-md;
+                .intro-title{
+                    &>h2{
+                        width: 60%;
+
+                    }
+                    &>.primary-text{
+                        font-size: 1rem;
+                    }
+                }
+                .paragraph{
+                    &>p{
+                        width: 90%;
+                    }
+                }
+                .counter-row{
+                    width: 70%;
+                    .counter-column{
+                        &>h2{
+                            font-size: 3.4rem;
+                        }
+                        &>p{
+                            font-size: 1.3rem;
+                        }
+                        &>a{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .intro-image{
+                    &>img{
+                        width: 100%;
+                    }
+                    &>.intro-image2{
+                        &>img{
+                            width: 100%;
+                        }
+                    }
+                    &>.intro-image3{
+                        top: 35%;
+                        &>img{
+                            width: 200px;
+                            height: 200px;
+
+                        }
+                    }
+                }
+            }
+        }
+        #themes-section{
+            padding: 45% 0 4rem 0;
+            &>.container{
+                width: $container-md;
+                .themes-row{
+                    gap: 2rem 4rem;
+                    grid-template-columns: 1fr 1fr;
+                    .text-column{
+                        &>p{
+                            width: 90%;
+                            padding-top: 10px;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+}
+// =========Media Query For (Small Devices)==========>
+@media screen and (max-width: 600px) {
+    main{
+        #intro-section{
+            .container{
+                width: $container-sm;
+                .intro-title{
+                    &>h2{
+                        width: 100%;
+                        font-size: 1.8rem;
+                        margin: 0 auto;
+
+                    }
+                    &>.primary-text{
+                        font-size: 0.9rem;
+                        &>span{
+                            &::after{
+                                width: 105px;
+                            }
+                        }
+                    }
+                }
+                .paragraph{
+                    &>p{
+                        width: 100%;
+                        font-size: 0.9rem;
+                    }
+                }
+                .counter-row{
+                    width: 70%;
+                    grid-template-columns: 1fr;
+                    .counter-column{
+                        &>h2{
+                            font-size: 3rem;
+                        }
+                        &>p{
+                            font-size: 1.2rem;
+                        }
+                        &>a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .intro-image{
+                    &>img{
+                        width: 100%;
+                    }
+                    &>.intro-image2{
+                        &>img{
+                            width: 100%;
+                            height: 300px;
+                        }
+                    }
+                    &>.intro-image3{
+                        top: 35%;
+                        &>img{
+                            width: 120px;
+                            height: 120px;
+
+                        }
+                    }
+                }
+            }
+        }
+        #themes-section{
+            padding: 60% 0 4rem 0;
+            &>.container{
+                width: $container-sm;
+                .themes-row{
+                    gap: 4rem;
+                    grid-template-columns: 1fr;
+                    .text-column{
+                        text-align: center;
+                        &>h3{
+                            font-size: 1.2rem;
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                        &>p{
+                            width: 90%;
+                            margin: 0 auto;
+                            font-size: 0.9rem;
+                            padding-top: 10px;
+                        }
+                    }
+                    .icons-row{
+
+                    }
+                }
+            }
+        }
+    }
+}

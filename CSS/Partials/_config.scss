@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: segoefont;
+    src: url('/Fonts/segoesc.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+    color: #222529;
+}
+h1{
+    font-size: 2.875rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+h5{
+    font-size: 1em;
+    margin: 0 0 14px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    color: #777;
+}
+p{
+    font-size: 1rem;
+    letter-spacing: -0.05em;
+}
+p{
+    color: #777;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+
+$text-white-color: #fff;
+$primary-text-color: #0088cc;
+$bg-black-color: #222529;
+$container-lg: 91%;
+$container-md: 86%;
+$container-sm: 98%;
+$latest-font: segoefont;
