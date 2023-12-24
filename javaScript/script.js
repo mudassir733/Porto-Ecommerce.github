@@ -62,19 +62,25 @@ function showPopup() {
 // TODO================Counter Number Start===========>
 const counterEl = document.querySelectorAll('.counter');
 let intarvalCounter = 20;
-counterEl.forEach((counterNum =>{
-    const counter = () =>{
+
+counterEl.forEach((counterNum) => {
+    const counter = () => {
         const targetNum = parseInt(counterNum.getAttribute('data-number'));
         const initialNum = parseInt(counterNum.textContent);
         const counterDuration = Math.floor(targetNum / intarvalCounter);
-        if (initialNum < targetNum) {
-           counterNum.textContent = counterDuration + initialNum 
-           setTimeout(counter, 10)
-           
-        }
         
-    }
-    
+        if (initialNum < targetNum) {
+            counterNum.textContent = counterDuration + initialNum;
+            setTimeout(counter, 10);
+        } else {
+            counterNum.textContent = targetNum; // Ensure the final value is exactly the targetNum
+        }
+
+        // Add a "+" sign after the counter
+        counterNum.textContent += "+";
+    };
+
     counter();
-}))
+});
+
 // TODO================Counter Number End===========>

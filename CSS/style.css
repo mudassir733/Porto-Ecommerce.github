@@ -512,30 +512,150 @@ main #themes-section {
       margin: 17px auto; }
 main #reason-proto {
   background-image: url(/accets/reason_bg.png);
-  height: 100vh;
   width: 100%;
-  margin-top: -30%; }
+  margin-top: -38%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+  overflow-x: hidden; }
+  main #reason-proto::after {
+    content: '';
+    border-top: 4.84vw solid #f4f4f4;
+    border-right: 100vw solid transparent;
+    display: block;
+    position: relative;
+    background: transparent !important;
+    border-top-color: transparent !important;
+    border-right-color: #f4f4f4 !important;
+    bottom: -68px; }
   main #reason-proto > .container {
     position: relative;
     padding-top: 18%; }
     main #reason-proto > .container .dots-image {
       position: absolute;
-      top: 175px;
+      top: 273px;
       left: 107px; }
     main #reason-proto > .container .reason-proto-row {
       padding-top: 8rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem 8rem;
+      gap: 2rem 5rem;
       width: 80%;
       margin: 0 auto;
-      place-items: center; }
+      place-items: center;
+      padding-top: 12rem; }
+      main #reason-proto > .container .reason-proto-row .reason-column {
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+        main #reason-proto > .container .reason-proto-row .reason-column .reason {
+          background-color: #035AD7;
+          padding: 11px 3.2rem;
+          width: fit-content;
+          transform: rotate(-12deg);
+          margin-left: 4rem; }
+          main #reason-proto > .container .reason-proto-row .reason-column .reason > h3 {
+            color: #fff;
+            text-transform: uppercase; }
+        main #reason-proto > .container .reason-proto-row .reason-column .choose {
+          background-color: #173E7B;
+          padding: 15px 3rem;
+          text-align: center;
+          width: fit-content;
+          transform: rotate(-12deg); }
+          main #reason-proto > .container .reason-proto-row .reason-column .choose > h3 {
+            color: #fff;
+            text-transform: uppercase; }
+        main #reason-proto > .container .reason-proto-row .reason-column .proto {
+          background-color: #222529;
+          padding: 9px 1.1rem;
+          text-align: center;
+          width: fit-content;
+          transform: rotate(-12deg);
+          margin-left: 42%; }
+          main #reason-proto > .container .reason-proto-row .reason-column .proto > h3 {
+            color: #fff;
+            font-weight: 800;
+            font-size: 2.1rem;
+            text-transform: uppercase;
+            position: relative; }
+            main #reason-proto > .container .reason-proto-row .reason-column .proto > h3::after {
+              position: absolute;
+              content: '';
+              width: 7rem;
+              height: 10px;
+              background-image: url(/accets/pencil-blue-line.png);
+              filter: brightness(0) invert(1);
+              left: 6px;
+              bottom: -14px;
+              transform: scaleY(-1); }
+        main #reason-proto > .container .reason-proto-row .reason-column .number {
+          position: absolute;
+          font-size: 12rem;
+          font-weight: 800;
+          color: #fff;
+          bottom: 55px;
+          left: -66px;
+          transform: rotate(-11deg); }
+      main #reason-proto > .container .reason-proto-row > .text-column > h3 {
+        color: #fff;
+        font-weight: 600; }
+      main #reason-proto > .container .reason-proto-row > .text-column > p {
+        color: rgba(255, 255, 255, 0.5);
+        padding-top: 17px; }
+    main #reason-proto > .container .template-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 8rem;
+      gap: 3rem 0; }
+      main #reason-proto > .container .template-row .template-column {
+        text-align: center; }
+        main #reason-proto > .container .template-row .template-column > img {
+          width: 340px; }
+        main #reason-proto > .container .template-row .template-column .text-wrap {
+          text-align: left;
+          margin: -7.5% auto 0 auto;
+          padding: 20px 10px 10px 40px; }
+          main #reason-proto > .container .template-row .template-column .text-wrap > .text {
+            display: flex;
+            gap: 10px;
+            align-items: center; }
+            main #reason-proto > .container .template-row .template-column .text-wrap > .text > span {
+              color: #222529;
+              font-size: 3rem;
+              font-weight: 800; }
+            main #reason-proto > .container .template-row .template-column .text-wrap > .text .titles > h4 {
+              color: #fff;
+              letter-spacing: 1.6px;
+              text-transform: uppercase;
+              font-size: 1rem;
+              font-weight: 600; }
+            main #reason-proto > .container .template-row .template-column .text-wrap > .text .titles > h3 {
+              color: #fff;
+              font-size: 1.4rem; }
+          main #reason-proto > .container .template-row .template-column .text-wrap > p {
+            color: rgba(255, 255, 255, 0.5);
+            padding-top: 10px; }
+    main #reason-proto > .container .buy-button {
+      width: 200px;
+      margin: 3rem auto 0 auto;
+      text-align: center; }
+      main #reason-proto > .container .buy-button > a {
+        background-color: #222529;
+        color: #fff;
+        padding: 15px 35px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.4s ease; }
+        main #reason-proto > .container .buy-button > a:hover {
+          background-color: rgba(34, 37, 41, 0.8); }
 
 @media screen and (max-width: 900px) {
   main #intro-section .container {
     width: 86%; }
     main #intro-section .container .intro-title > h2 {
-      width: 60%; }
+      width: 90%; }
     main #intro-section .container .intro-title > .primary-text {
       font-size: 1rem; }
     main #intro-section .container .paragraph > p {
@@ -566,7 +686,29 @@ main #reason-proto {
         grid-template-columns: 1fr 1fr; }
         main #themes-section > .container .themes-row .text-column > p {
           width: 90%;
-          padding-top: 10px; } }
+          padding-top: 10px; }
+      main #themes-section > .container .top-extension-div > p {
+        width: 100%;
+        margin: 17px auto; }
+      main #themes-section > .container .top-extension-div .extension-image > img {
+        width: 100%; }
+  main #reason-proto {
+    margin-top: -55%; }
+    main #reason-proto > .container .dots-image {
+      position: absolute;
+      top: 240px;
+      left: 84px; }
+    main #reason-proto > .container .reason-proto-row {
+      grid-template-columns: 1fr;
+      gap: 4rem 2rem;
+      padding-top: 15rem;
+      width: 100%; }
+      main #reason-proto > .container .reason-proto-row .reason-column .number {
+        left: -125px;
+        bottom: 42px; }
+    main #reason-proto > .container .template-row {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 4rem; } }
 @media screen and (max-width: 600px) {
   main #intro-section .container {
     width: 98%; }
@@ -617,6 +759,139 @@ main #reason-proto {
             width: 90%;
             margin: 0 auto;
             font-size: 0.9rem;
-            padding-top: 10px; } }
+            padding-top: 10px; }
+  main #reason-proto {
+    margin-top: -136%; }
+    main #reason-proto > .container .dots-image {
+      position: absolute;
+      top: 374px;
+      left: 30px; }
+    main #reason-proto > .container .reason-proto-row {
+      grid-template-columns: 1fr;
+      gap: 4rem 2rem;
+      padding-top: 28rem;
+      width: 100%; }
+      main #reason-proto > .container .reason-proto-row .reason-column .number {
+        left: -18px;
+        bottom: 35px;
+        font-size: 7rem; }
+      main #reason-proto > .container .reason-proto-row .reason-column .reason {
+        padding: 11px 2.2rem;
+        margin-left: 5rem; }
+        main #reason-proto > .container .reason-proto-row .reason-column .reason > h3 {
+          font-size: 1.3rem; }
+      main #reason-proto > .container .reason-proto-row .reason-column .choose {
+        padding: 15px 0.8rem;
+        transform: rotate(-12deg);
+        margin-left: 2.2rem; }
+        main #reason-proto > .container .reason-proto-row .reason-column .choose > h3 {
+          font-size: 1.3rem; }
+      main #reason-proto > .container .reason-proto-row .reason-column .proto {
+        margin-left: 45%; }
+        main #reason-proto > .container .reason-proto-row .reason-column .proto > h3 {
+          font-size: 1.3rem; }
+          main #reason-proto > .container .reason-proto-row .reason-column .proto > h3::after {
+            position: absolute;
+            content: '';
+            width: 5.1rem;
+            height: 10px;
+            left: 6px;
+            bottom: -14px; }
+      main #reason-proto > .container .reason-proto-row .text-column {
+        text-align: center; }
+        main #reason-proto > .container .reason-proto-row .text-column > h3 {
+          font-size: 1.2rem; }
+        main #reason-proto > .container .reason-proto-row .text-column > p {
+          padding-top: 10px; }
+    main #reason-proto > .container .template-row {
+      grid-template-columns: 1fr;
+      margin-top: 4rem; }
+      main #reason-proto > .container .template-row .template-column .text-wrap {
+        padding: 6px 0 0 14px; }
+        main #reason-proto > .container .template-row .template-column .text-wrap > .text > span {
+          font-size: 2.5rem; }
+        main #reason-proto > .container .template-row .template-column .text-wrap > .text .titles > h4 {
+          font-size: 0.9rem; }
+        main #reason-proto > .container .template-row .template-column .text-wrap > .text .titles > h3 {
+          font-size: 1.2rem; }
+    main #reason-proto > .container .buy-button > a {
+      background-color: #222529;
+      color: #fff;
+      padding: 10px 21px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.4s ease;
+      font-size: 0.7rem; } }
+main #demo-import {
+  padding-top: 3rem;
+  background-color: #f4f4f4; }
+  main #demo-import .container .demo-import-row {
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0 2rem; }
+    main #demo-import .container .demo-import-row .column-1 {
+      text-align: center; }
+      main #demo-import .container .demo-import-row .column-1 > .text > h2 {
+        padding-bottom: 5px; }
+      main #demo-import .container .demo-import-row .column-1 > .text .primary-text {
+        letter-spacing: 1.6px;
+        text-transform: none;
+        font-size: 1.1rem; }
+      main #demo-import .container .demo-import-row .column-1 > .text > p {
+        padding-top: 5px; }
+      main #demo-import .container .demo-import-row .column-1 .docs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; }
+        main #demo-import .container .demo-import-row .column-1 .docs .docs-icon > i {
+          width: 60px;
+          height: 60px;
+          background-color: #fff;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          font-size: 1.2rem; }
+        main #demo-import .container .demo-import-row .column-1 .docs > a {
+          text-transform: capitalize;
+          color: #222529;
+          font-weight: 600; }
+          main #demo-import .container .demo-import-row .column-1 .docs > a:hover {
+            text-decoration: underline; }
+    main #demo-import .container .demo-import-row .column-2 {
+      text-align: right; }
+      main #demo-import .container .demo-import-row .column-2 .image {
+        position: relative; }
+        main #demo-import .container .demo-import-row .column-2 .image > img {
+          max-width: 100%;
+          height: auto; }
+        main #demo-import .container .demo-import-row .column-2 .image > .dots-image2 {
+          position: absolute;
+          top: -62px;
+          right: -57px; }
+
+@media screen and (max-width: 900px) {
+  main #demo-import .container {
+    width: 86%; } }
+@media screen and (max-width: 600px) {
+  main #demo-import .container {
+    width: 98%; }
+    main #demo-import .container .demo-import-row {
+      grid-template-columns: 1fr;
+      gap: 3rem; }
+      main #demo-import .container .demo-import-row > .column-1 > .text h2 {
+        font-size: 1.8rem; }
+      main #demo-import .container .demo-import-row > .column-1 > .text .primary-text {
+        font-size: 0.9rem; }
+      main #demo-import .container .demo-import-row > .column-1 > .text p {
+        font-size: 0.9rem; }
+      main #demo-import .container .demo-import-row > .column-2 > .image .dots-image2 {
+        top: -22rem;
+        right: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */
