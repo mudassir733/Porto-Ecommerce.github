@@ -1,0 +1,88 @@
+main {
+    #header-builder {
+        padding: 6rem 0 3rem 0;
+        margin-top: 8rem;
+        background-image: url(/accets/header_builder_bg.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: '';
+            border-top: 4.84vw solid $text-white-color;
+            border-top-color: rgb(244, 244, 244);
+            border-top-color: $text-white-color;
+            border-left: 100vw solid transparent;
+            border-right-color: transparent;
+            display: block;
+            position: relative;
+            background: transparent !important;
+            border-right-color: #f4f4f4 !important;
+            top: -96px;
+        }
+
+        .container {
+            .header-builder-row {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+
+                .column-1 {
+                    >.image {
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .column-2 {
+                    >.text {
+                        padding-top: 2.5rem;
+                        text-align: center;
+
+                        >.primary-text {
+                            letter-spacing: 1.6px;
+                            text-transform: none;
+                            font-size: 1.1rem;
+                        }
+                        >h2{
+                            color: $text-white-color;
+                            padding-bottom: 20px;
+                        }
+                    }
+                    >p{
+                        text-align: center;
+                    }
+                    .icon-row{
+                        display: flex;
+                        gap: 15px;
+                        width: 60%;
+                        margin: 0 auto;
+                        align-items: center;
+                        .icon{
+                            background-color: $text-white-color;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 17px;
+                            border-radius: 50px;
+                            box-shadow: 0 0 10px rgba($text-white-color, 0.1);
+                            >i{
+                                color: $primary-text-color;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        >p{
+                            margin-bottom: 0;
+                            color: $text-white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
