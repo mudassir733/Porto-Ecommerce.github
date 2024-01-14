@@ -109,3 +109,61 @@ filterButton.forEach(function (button) {
 });
 
 // TODO================FilterGallery End===========>
+
+
+
+
+
+
+// TODO================Testimonial Slider Start===========>
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the Swiper container
+  let swiperContainer = document.querySelector('.mySwiper');
+
+  // Initialize Swiper
+  let swiper = new Swiper(swiperContainer, {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    sliderPerGroup: 1,
+  
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      on: {
+          slideChange: function () {
+              // Remove the 'active' class from all slider-content elements
+              let sliderContents = document.querySelectorAll('.slider-content');
+              sliderContents.forEach(function (content) {
+                  content.classList.remove('active');
+              });
+
+              // Add the 'active' class to the current slide's slider-content
+              let currentSlide = swiper.slides[swiper.activeIndex];
+              let currentContent = currentSlide.querySelector('.slider-content');
+              currentContent.classList.add('active');
+              // console.log(swiper.el.childNodes[1].children[0]);
+          },
+      },
+  });
+
+
+  
+});
+
+// TODO================Testimonial Slider End===========>

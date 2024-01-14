@@ -1,0 +1,516 @@
+main {
+    #extension {
+        background-color: $bg-black-color;
+        padding: 4rem 0;
+        margin-top: 2rem;
+
+        .container {
+            .top-title {
+                text-align: center;
+
+                .primary-text {
+                    letter-spacing: 1.6px;
+                    text-transform: none;
+                    font-size: 1.1rem;
+                }
+                h2{
+                    color: $text-white-color;
+                }
+                p{
+                    width: 60%;
+                    margin: 0 auto;
+                    padding-top: 10px;
+                }
+            }
+            .magento-extenstion{
+                background-color: #25282C;
+                padding: 30px;
+                margin-top: 3rem;
+                border-radius: 10px;
+                transition: all 400ms ease;
+                &:hover{
+                    box-shadow: 0 0 30px rgba(black,  0.2);
+                }
+                .icon-div{
+                    .icon{
+                        width: 130px;
+                        height: 130px;
+                        background: url(/accets/icons.png);
+                        background-position-y: 100%;
+                        
+                    }
+                    h3{
+                        font-size: 1.1rem;
+                        color: $text-white-color;
+                        margin-top: 20px;
+
+                    }
+                }
+                .extension-row{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-top: 1.5rem;
+                    padding-bottom: 30px;
+                    gap: 2rem;
+                    
+                    .column{
+                        display: flex;
+                        gap: 20px;
+                        .icon{
+                            .check{
+                                margin-top: 10px;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50px;
+                                background-color: $text-white-color;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 20;
+                                &::before{
+                                    content: '';
+                                    width: 35px;
+                                    height: 35px;
+                                    position: absolute;
+                                    z-index: -1;
+                                    padding: 3px;
+                                    border-radius: 50px;
+                                    background-color: rgba($text-white-color, 0.1);
+                                }
+                                i{
+                                    color: $primary-text-color;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                        .text{
+                            span{
+                                color: $text-white-color;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .boxes-row{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin-top: 20px;
+                gap: 20px;
+                .column{
+                    background-color: #25282C;
+                    padding: 30px;
+                    transition: all 400ms ease;
+                    &:hover{
+                        box-shadow: 0 0 20px rgba(black,  0.2);
+                        border-radius: 10px;
+                    }
+                    .box-1{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -20px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-2{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -120px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-3{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -220px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-4{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -320px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-5{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -420px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-6{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -520px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-7{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -620px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-8{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -720px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-9{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -820px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-10{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -920px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-11{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -1020px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-12{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -1120px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-13{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -1220px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-14{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -1320px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-15{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -1420px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .box-16{
+                        .icon-div{
+                            padding-top: 20px;
+                            .icon{
+                                width: 65px;
+                                height: 65px;
+                                background-color: red;
+                                background: url(/accets/icons.png);
+                                background-position: -1520px -110px;
+                            }
+                        }
+                        .text{
+                            h3{
+                                font-size: 1.1rem;
+                                color: $text-white-color;
+                                padding: 15px 0 20px 0;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// =========Media Query For (Medium Devices)==========>
+@media screen and (max-width: 900px) {
+    main{
+        #extension{
+            .container{
+                width: $container-md;
+                .boxes-row{
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+}
+// =========Media Query For (Medium Devices)==========>
+@media screen and (max-width: 600px) {
+    main{
+        #extension{
+            .container{
+                width: $container-sm;
+                .top-title {
+    
+                    .primary-text {
+                        font-size: 0.9rem;
+                    }
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                    p{
+                        width: 100%;
+                       
+                    }
+                }
+                
+                .magento-extenstion{
+                    .extension-row{
+                        grid-template-columns: 1fr;
+                    }
+                }
+                .boxes-row{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

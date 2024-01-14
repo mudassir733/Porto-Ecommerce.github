@@ -1247,4 +1247,835 @@ main #header-builder {
         margin-bottom: 0;
         color: #fff; }
 
+@media screen and (max-width: 900px) {
+  main #header-builder .container {
+    width: 86%; }
+    main #header-builder .container .header-builder-row .column-2 .icon-row {
+      width: 100%; } }
+@media screen and (max-width: 600px) {
+  main #header-builder .container {
+    width: 98%; }
+    main #header-builder .container .header-builder-row {
+      grid-template-columns: 1fr; }
+      main #header-builder .container .header-builder-row .column-2 > .text > .primary-text {
+        font-size: 0.9rem; }
+      main #header-builder .container .header-builder-row .column-2 > .text > h2 {
+        font-size: 1.8rem; }
+      main #header-builder .container .header-builder-row .column-2 > .text p {
+        font-size: 0.9rem; }
+      main #header-builder .container .header-builder-row .column-2 > p {
+        font-size: 0.9rem; }
+      main #header-builder .container .header-builder-row .column-2 .icon-row {
+        width: 80%; }
+        main #header-builder .container .header-builder-row .column-2 .icon-row > p {
+          font-size: 0.9rem; } }
+main #lay-out {
+  padding: 4rem 0;
+  background-image: url(/accets/half_circle.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+  main #lay-out .container .titles {
+    text-align: center; }
+    main #lay-out .container .titles > p {
+      padding-top: 12px; }
+  main #lay-out .container .layout-row {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; }
+    main #lay-out .container .layout-row .column .layout-image {
+      position: relative;
+      text-align: center; }
+      main #lay-out .container .layout-row .column .layout-image .layout-1 {
+        position: relative; }
+        main #lay-out .container .layout-row .column .layout-image .layout-1 .lay-out-img1 {
+          z-index: 111;
+          width: 16vw; }
+      main #lay-out .container .layout-row .column .layout-image .layout-2 .lay-out-img2 {
+        margin-top: -29%;
+        margin-left: 50%;
+        width: 16vw; }
+      main #lay-out .container .layout-row .column .layout-image .layout-3 .lay-out-img3 {
+        margin-top: -20%;
+        margin-left: 20%;
+        width: 16vw; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-1 .siderBars-img-1 {
+        margin-left: 50%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-2 .siderBars-img-2 {
+        margin-top: -29%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-3 .siderBars-img-3 {
+        margin-top: -20%;
+        margin-left: 48%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-1 .sliders-img-1 {
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-2 .sliders-img-2 {
+        margin-top: -30%;
+        margin-left: 58%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-3 .sliders-img-3 {
+        margin-top: -38%;
+        margin-left: 44%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-4 .sliders-img-4 {
+        margin-top: -38%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-1 {
+        position: relative; }
+        main #lay-out .container .layout-row .column .layout-image .catagory-1 .catagory-img-1 {
+          z-index: 111;
+          position: relative;
+          width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-2 {
+        position: relative; }
+        main #lay-out .container .layout-row .column .layout-image .catagory-2 .catagory-img-2 {
+          margin-left: 40%;
+          margin-top: -29%;
+          z-index: -1;
+          width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-3 .catagory-img-3 {
+        z-index: -2;
+        margin-top: -38%;
+        margin-left: 56%;
+        width: 12vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-4 .catagory-img-4 {
+        margin-top: -38%;
+        z-index: 566;
+        position: relative;
+        width: 12vw; }
+    main #lay-out .container .layout-row .column .text {
+      padding-top: 1.4rem;
+      text-align: center; }
+      main #lay-out .container .layout-row .column .text > h4 {
+        font-size: 1.2rem;
+        padding-bottom: 10px; }
+      main #lay-out .container .layout-row .column .text > p {
+        font-size: 0.9rem; }
+  main #lay-out .custom-shape-divider-bottom-1703608500 {
+    position: absolute;
+    bottom: -108px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 44; }
+  main #lay-out .custom-shape-divider-bottom-1703608500 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px; }
+  main #lay-out .custom-shape-divider-bottom-1703608500 .shape-fill {
+    fill: #fff; }
+
+@media screen and (max-width: 900px) {
+  main #lay-out .container {
+    width: 86%; }
+    main #lay-out .container .layout-row {
+      grid-template-columns: 1fr 1fr; }
+      main #lay-out .container .layout-row .column .layout-image .layout-1 .lay-out-img1 {
+        width: 21vw; }
+      main #lay-out .container .layout-row .column .layout-image .layout-2 .lay-out-img2 {
+        width: 21vw; }
+      main #lay-out .container .layout-row .column .layout-image .layout-3 .lay-out-img3 {
+        width: 21vw; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-1 .siderBars-img-1 {
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-2 .siderBars-img-2 {
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-3 .siderBars-img-3 {
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-1 .sliders-img-1 {
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-2 .sliders-img-2 {
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-3 .sliders-img-3 {
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-4 .sliders-img-4 {
+        margin-top: -31%;
+        width: 20vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-1 .catagory-img-1 {
+        width: 18vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-2 .catagory-img-2 {
+        width: 18vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-3 .catagory-img-3 {
+        width: 18vw; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-4 .catagory-img-4 {
+        margin-top: -31%;
+        width: 18vw; }
+      main #lay-out .container .layout-row .column .text {
+        padding-top: 1.4rem;
+        text-align: center; }
+        main #lay-out .container .layout-row .column .text > h4 {
+          font-size: 1.2rem;
+          padding-bottom: 10px; }
+        main #lay-out .container .layout-row .column .text > p {
+          font-size: 0.9rem; } }
+@media screen and (max-width: 600px) {
+  main #lay-out .container {
+    width: 98%; }
+    main #lay-out .container .titles > h2 {
+      font-size: 1.8rem; }
+    main #lay-out .container .titles > .primary-text {
+      font-size: 0.9rem; }
+    main #lay-out .container .titles > p {
+      font-size: 0.9rem; }
+    main #lay-out .container .layout-row .column .layout-image {
+      text-align: left; }
+      main #lay-out .container .layout-row .column .layout-image .layout-1 .lay-out-img1 {
+        width: 30vw;
+        height: 15vh; }
+      main #lay-out .container .layout-row .column .layout-image .layout-2 .lay-out-img2 {
+        width: 30vw;
+        height: 15vh;
+        margin-left: 33%; }
+      main #lay-out .container .layout-row .column .layout-image .layout-3 .lay-out-img3 {
+        width: 30vw;
+        height: 15vh;
+        margin-top: -37%;
+        margin-left: 7%; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-1 .siderBars-img-1 {
+        width: 30vw;
+        height: 15vh;
+        margin-left: 30%; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-2 .siderBars-img-2 {
+        width: 30vw;
+        height: 15vh; }
+      main #lay-out .container .layout-row .column .layout-image .siderBars-3 .siderBars-img-3 {
+        width: 30vw;
+        height: 15vh;
+        margin-left: 30%;
+        margin-top: -37%; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-1 .sliders-img-1 {
+        width: 30vw;
+        height: 15vh; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-2 .sliders-img-2 {
+        width: 30vw;
+        height: 15vh;
+        margin-left: 31%;
+        margin-top: -36%; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-3 .sliders-img-3 {
+        width: 30vw;
+        height: 15vh;
+        margin-left: 16%; }
+      main #lay-out .container .layout-row .column .layout-image .sliders-4 .sliders-img-4 {
+        margin-top: -31%;
+        width: 30vw;
+        height: 15vh; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-1 .catagory-img-1 {
+        width: 30vw;
+        height: 15vh; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-2 .catagory-img-2 {
+        width: 30vw;
+        height: 15vh;
+        margin-top: -36%;
+        margin-left: 20%; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-3 .catagory-img-3 {
+        width: 30vw;
+        height: 15vh;
+        margin-left: 35%; }
+      main #lay-out .container .layout-row .column .layout-image .catagory-4 .catagory-img-4 {
+        margin-top: -33%;
+        width: 30vw;
+        height: 15vh; } }
+main #testimonial {
+  background-color: #f4f4f4;
+  padding-top: 10rem;
+  position: relative;
+  padding-bottom: 2rem; }
+  main #testimonial .text {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column; }
+    main #testimonial .text > h1 {
+      font-size: 7.6rem; }
+    main #testimonial .text .paragraph {
+      font-size: 2.7rem;
+      font-weight: 700;
+      color: #222529;
+      padding-bottom: 2rem; }
+    main #testimonial .text .primary-text {
+      letter-spacing: 1.6px;
+      text-transform: none;
+      font-size: 1.1rem; }
+  main #testimonial .swiper {
+    width: 100%;
+    height: 246px; }
+    main #testimonial .swiper .swiper-wrapper {
+      width: 100%;
+      height: 100%; }
+      main #testimonial .swiper .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content {
+          width: 800px;
+          padding: 40px 30px;
+          background-color: #fff;
+          border-radius: 10px; }
+          main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active {
+            background-color: #0088cc;
+            color: #fff; }
+            main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active .title {
+              display: flex;
+              justify-content: space-between; }
+              main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active .title .name h4 {
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: 600;
+                text-align: left;
+                text-transform: lowercase; }
+              main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active .title .name p {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 0.8rem; }
+              main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active .title .stars > i {
+                font-size: 0.9rem;
+                color: #fff; }
+            main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active .description {
+              text-align: left; }
+              main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content.active .description p {
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 5px; }
+          main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content .title {
+            display: flex;
+            justify-content: space-between; }
+            main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content .title .name h4 {
+              color: #222529;
+              font-size: 1.3rem;
+              font-weight: 600;
+              text-align: left;
+              text-transform: lowercase; }
+            main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content .title .name p {
+              color: rgba(34, 37, 41, 0.8);
+              font-size: 0.8rem;
+              text-align: left; }
+            main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content .title .stars > i {
+              font-size: 0.9rem;
+              color: #222529; }
+          main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content .description {
+            text-align: left; }
+            main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content .description p {
+              color: rgba(34, 37, 41, 0.9);
+              margin-bottom: 5px; }
+    main #testimonial .swiper .swiper {
+      margin-left: auto;
+      margin-right: auto; }
+    main #testimonial .swiper .swiper-button-next {
+      background-color: #fff;
+      font-size: 1.5rem;
+      color: rgba(34, 37, 41, 0.9);
+      padding: 30px;
+      border-radius: 50px;
+      right: 8%; }
+      main #testimonial .swiper .swiper-button-next::after {
+        content: ''; }
+    main #testimonial .swiper .swiper-button-prev {
+      background-color: #fff;
+      font-size: 1.5rem;
+      color: rgba(34, 37, 41, 0.9);
+      padding: 30px;
+      border-radius: 50px;
+      left: 8%; }
+      main #testimonial .swiper .swiper-button-prev::after {
+        content: ''; }
+  main #testimonial .buy-button {
+    width: 200px;
+    margin: 3rem auto 0 auto;
+    text-align: center; }
+    main #testimonial .buy-button > a {
+      background-color: #222529;
+      color: #fff;
+      padding: 15px 35px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.4s ease; }
+      main #testimonial .buy-button > a:hover {
+        background-color: rgba(34, 37, 41, 0.8); }
+  main #testimonial .custom-shape-divider-bottom-1703608500 {
+    position: absolute;
+    bottom: -108px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 44; }
+  main #testimonial .custom-shape-divider-bottom-1703608500 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px; }
+  main #testimonial .custom-shape-divider-bottom-1703608500 .shape-fill {
+    fill: #f4f4f4; }
+
+@media screen and (max-width: 900px) {
+  main #testimonial .text h1 {
+    font-size: 6rem; }
+  main #testimonial .text .paragraph {
+    font-size: 2.5rem; }
+  main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content {
+    width: 500px; } }
+@media screen and (max-width: 600px) {
+  main #testimonial .text h1 {
+    font-size: 4rem; }
+  main #testimonial .text .paragraph {
+    font-size: 2rem; }
+  main #testimonial .text .primary-text {
+    font-size: 0.9rem; }
+  main #testimonial .text p {
+    font-size: 0.9rem; }
+  main #testimonial .swiper {
+    height: 362px; }
+    main #testimonial .swiper .swiper-wrapper .swiper-slide .slider-content {
+      width: 350px; }
+    main #testimonial .swiper .swiper-button-next {
+      right: 2%; }
+    main #testimonial .swiper .swiper-button-prev {
+      left: 2%; } }
+main #professional-support {
+  margin-top: 10rem;
+  overflow: hidden;
+  padding-bottom: 10rem; }
+  main #professional-support .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; }
+    main #professional-support .container .row .column-1 {
+      width: 500px; }
+      main #professional-support .container .row .column-1 .content .text .primary-text {
+        letter-spacing: 1.6px;
+        text-transform: none;
+        font-size: 1rem; }
+      main #professional-support .container .row .column-1 .content .text p {
+        padding-top: 10px; }
+      main #professional-support .container .row .column-1 .content .documnetation {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; }
+        main #professional-support .container .row .column-1 .content .documnetation .docs {
+          display: flex;
+          gap: 20px;
+          align-items: center; }
+          main #professional-support .container .row .column-1 .content .documnetation .docs .icon > i {
+            font-size: 1.2rem;
+            color: #0088cc; }
+          main #professional-support .container .row .column-1 .content .documnetation .docs .docs-title strong {
+            color: #222529;
+            font-size: 1rem; }
+            main #professional-support .container .row .column-1 .content .documnetation .docs .docs-title strong > span {
+              color: rgba(34, 37, 41, 0.7);
+              font-weight: 400; }
+    main #professional-support .container .row .column-2 {
+      width: 700px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      main #professional-support .container .row .column-2 .img-container {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        main #professional-support .container .row .column-2 .img-container .image {
+          width: 598px;
+          height: 458px;
+          padding: 2px;
+          background-color: #fff;
+          box-shadow: 0 0 40px rgba(34, 37, 41, 0.2);
+          position: absolute;
+          right: -64px; }
+          main #professional-support .container .row .column-2 .img-container .image > img {
+            width: 100%;
+            height: 100%; }
+        main #professional-support .container .row .column-2 .img-container .image-2 {
+          position: absolute;
+          bottom: -70px;
+          box-shadow: 0 0 40px rgba(34, 37, 41, 0.2);
+          z-index: 20; }
+        main #professional-support .container .row .column-2 .img-container .dots-img {
+          position: absolute;
+          bottom: -127px;
+          z-index: -1;
+          left: -57px;
+          transform: rotate(91deg); }
+
+@media screen and (max-width: 900px) {
+  main #professional-support .container {
+    width: 86%; }
+    main #professional-support .container .row {
+      grid-template-columns: 1fr;
+      gap: 5rem 0; }
+      main #professional-support .container .row .column-1 {
+        width: 100%; }
+        main #professional-support .container .row .column-1 .documnetation {
+          width: 90%; }
+      main #professional-support .container .row .column-2 {
+        padding-bottom: 50px; } }
+@media screen and (max-width: 600px) {
+  main #professional-support .container {
+    width: 98%; }
+    main #professional-support .container .row .column-1 {
+      width: 100%; }
+      main #professional-support .container .row .column-1 .content .text {
+        width: 50%; }
+        main #professional-support .container .row .column-1 .content .text h2 {
+          font-size: 1.8rem; }
+        main #professional-support .container .row .column-1 .content .text .primary-text {
+          font-size: 0.9rem; }
+        main #professional-support .container .row .column-1 .content .text p {
+          padding-top: 10px; }
+      main #professional-support .container .row .column-1 .documnetation {
+        width: 50%; }
+    main #professional-support .container .row .column-2 {
+      padding-bottom: 50px; }
+      main #professional-support .container .row .column-2 .img-container .image {
+        width: 300px;
+        height: 300px;
+        right: 300px; }
+        main #professional-support .container .row .column-2 .img-container .image img {
+          object-fit: cover; }
+      main #professional-support .container .row .column-2 .img-container .image-2 {
+        width: 280px;
+        height: 200px;
+        bottom: 104px; }
+        main #professional-support .container .row .column-2 .img-container .image-2 img {
+          width: 100%;
+          height: 100%; }
+      main #professional-support .container .row .column-2 .img-container .dots-img {
+        bottom: 27px;
+        left: -8px; } }
+main #extension {
+  background-color: #222529;
+  padding: 4rem 0;
+  margin-top: 2rem; }
+  main #extension .container .top-title {
+    text-align: center; }
+    main #extension .container .top-title .primary-text {
+      letter-spacing: 1.6px;
+      text-transform: none;
+      font-size: 1.1rem; }
+    main #extension .container .top-title h2 {
+      color: #fff; }
+    main #extension .container .top-title p {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 10px; }
+  main #extension .container .magento-extenstion {
+    background-color: #25282C;
+    padding: 30px;
+    margin-top: 3rem;
+    border-radius: 10px;
+    transition: all 400ms ease; }
+    main #extension .container .magento-extenstion:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); }
+    main #extension .container .magento-extenstion .icon-div .icon {
+      width: 130px;
+      height: 130px;
+      background: url(/accets/icons.png);
+      background-position-y: 100%; }
+    main #extension .container .magento-extenstion .icon-div h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-top: 20px; }
+    main #extension .container .magento-extenstion .extension-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 1.5rem;
+      padding-bottom: 30px;
+      gap: 2rem; }
+      main #extension .container .magento-extenstion .extension-row .column {
+        display: flex;
+        gap: 20px; }
+        main #extension .container .magento-extenstion .extension-row .column .icon .check {
+          margin-top: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50px;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          z-index: 20; }
+          main #extension .container .magento-extenstion .extension-row .column .icon .check::before {
+            content: '';
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1); }
+          main #extension .container .magento-extenstion .extension-row .column .icon .check i {
+            color: #0088cc;
+            font-size: 1rem; }
+        main #extension .container .magento-extenstion .extension-row .column .text span {
+          color: #fff;
+          font-weight: 700; }
+        main #extension .container .magento-extenstion .extension-row .column .text p {
+          font-size: 0.9rem; }
+  main #extension .container .boxes-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    gap: 20px; }
+    main #extension .container .boxes-row .column {
+      background-color: #25282C;
+      padding: 30px;
+      transition: all 400ms ease; }
+      main #extension .container .boxes-row .column:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px; }
+      main #extension .container .boxes-row .column .box-1 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-1 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -20px -110px; }
+      main #extension .container .boxes-row .column .box-1 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-1 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-2 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-2 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -120px -110px; }
+      main #extension .container .boxes-row .column .box-2 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-2 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-3 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-3 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -220px -110px; }
+      main #extension .container .boxes-row .column .box-3 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-3 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-4 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-4 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -320px -110px; }
+      main #extension .container .boxes-row .column .box-4 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-4 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-5 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-5 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -420px -110px; }
+      main #extension .container .boxes-row .column .box-5 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-5 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-6 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-6 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -520px -110px; }
+      main #extension .container .boxes-row .column .box-6 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-6 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-7 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-7 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -620px -110px; }
+      main #extension .container .boxes-row .column .box-7 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-7 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-8 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-8 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -720px -110px; }
+      main #extension .container .boxes-row .column .box-8 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-8 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-9 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-9 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -820px -110px; }
+      main #extension .container .boxes-row .column .box-9 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-9 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-10 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-10 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -920px -110px; }
+      main #extension .container .boxes-row .column .box-10 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-10 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-11 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-11 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -1020px -110px; }
+      main #extension .container .boxes-row .column .box-11 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-11 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-12 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-12 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -1120px -110px; }
+      main #extension .container .boxes-row .column .box-12 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-12 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-13 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-13 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -1220px -110px; }
+      main #extension .container .boxes-row .column .box-13 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-13 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-14 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-14 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -1320px -110px; }
+      main #extension .container .boxes-row .column .box-14 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-14 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-15 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-15 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -1420px -110px; }
+      main #extension .container .boxes-row .column .box-15 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-15 .text p {
+        font-size: 0.9rem; }
+      main #extension .container .boxes-row .column .box-16 .icon-div {
+        padding-top: 20px; }
+        main #extension .container .boxes-row .column .box-16 .icon-div .icon {
+          width: 65px;
+          height: 65px;
+          background-color: red;
+          background: url(/accets/icons.png);
+          background-position: -1520px -110px; }
+      main #extension .container .boxes-row .column .box-16 .text h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 15px 0 20px 0; }
+      main #extension .container .boxes-row .column .box-16 .text p {
+        font-size: 0.9rem; }
+
+@media screen and (max-width: 900px) {
+  main #extension .container {
+    width: 86%; }
+    main #extension .container .boxes-row {
+      grid-template-columns: repeat(3, 1fr); } }
+@media screen and (max-width: 600px) {
+  main #extension .container {
+    width: 98%; }
+    main #extension .container .top-title .primary-text {
+      font-size: 0.9rem; }
+    main #extension .container .top-title h2 {
+      font-size: 1.8rem; }
+    main #extension .container .top-title p {
+      width: 100%; }
+    main #extension .container .magento-extenstion .extension-row {
+      grid-template-columns: 1fr; }
+    main #extension .container .boxes-row {
+      grid-template-columns: 1fr; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -86,3 +86,58 @@ main {
         }
     }
 }
+// =========Media Query For (Medium Devices)==========>
+@media screen and (max-width: 900px) {
+    main{
+        #header-builder{
+            .container{
+                width: $container-md;
+                .header-builder-row{
+                    .column-2{
+                        .icon-row{
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+// =========Media Query For (Small Devices)==========>
+@media screen and (max-width: 600px) {
+    main{
+        #header-builder{
+            .container{
+                width: $container-sm;
+                .header-builder-row{
+                    grid-template-columns: 1fr;
+                    .column-2{
+                        >.text{
+                            >.primary-text{
+                                font-size: 0.9rem;
+                            }
+                            >h2{
+                                font-size: 1.8rem;
+                            }
+                            p{
+                                font-size: 0.9rem;
+                            }
+                        }
+                        >p{
+                            font-size: 0.9rem;
+
+                        }
+                        .icon-row{
+                            width: 80%;
+                           >p{
+                            font-size: 0.9rem;
+                           }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
