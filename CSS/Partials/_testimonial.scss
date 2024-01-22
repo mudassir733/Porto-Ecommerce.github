@@ -4,6 +4,7 @@ main {
         padding-top: 10rem;
         position: relative;
         padding-bottom: 2rem;
+        overflow: hidden;
 
         .text {
             text-align: center;
@@ -251,6 +252,18 @@ main {
                 }
                 .swiper-button-prev{
                     left: 2%;
+                }
+            }
+            .buy-button{
+                &>a{
+                    background-color: $bg-black-color;
+                    color: $text-white-color;
+                    padding: 10px 21px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    border-radius: 50px;
+                    transition: all 0.4s ease;
+                    font-size: 0.7rem;
                 }
             }
         }

@@ -1,6 +1,7 @@
 main {
     #intro-section {
         margin-top: -3rem;
+        overflow: hidden;
         
         
         .container {
@@ -122,6 +123,7 @@ main {
         background-color: #f4f4f4;
         margin-top: -25%;
         padding: 30% 0 4rem 0;
+        overflow: hidden;
 
         &>.container {
             .themes-row {
@@ -203,7 +205,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 5%;
-        overflow-x: hidden;
+        overflow: hidden;
 
         &::after{
             content: '';

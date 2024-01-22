@@ -167,3 +167,598 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // TODO================Testimonial Slider End===========>
+
+
+
+
+// TODO================Customer Showcase Slider Start===========>
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 5,
+  direction: getDirection(),
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 5,
+    },
+    810: {
+      slidesPerView: 3,
+    },
+    360: {
+      slidesPerView: 1,
+    },
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+  
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 360 ? 'vertical' : 'horizontal';
+
+  return direction;
+};
+// TODO================Customer Showcase Slider End===========>
+
+
+
+
+
+// TODO================Scroll To Top Start===========>
+// Get the button element
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+scrollToTopBtn.addEventListener("click", function(){
+  scrollToTop();
+})
+
+// Add a scroll event listener
+window.onscroll = function() {
+  scrollFunction();
+
+};
+
+
+// Show or hide the button based on scroll position
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (window.innerWidth >= 900) {
+      scrollToTopBtn.style.opacity = 1;
+    } else {
+      scrollToTopBtn.style.opacity = 0;
+    }
+  } else {
+    scrollToTopBtn.style.opacity = 0;
+  }
+}
+
+// Scroll to the top when the button is clicked
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+// TODO================Scroll To Top End===========>
+
+
+
+
+// TODO================Gsap Animation Start===========>
+// Header Animation
+function headerAnimation() {
+  // logo
+gsap.from("#header .logo", {
+  opacity: 0,
+  duration: 2,
+});
+// navLinks
+gsap.from("#header .page-links", {
+  opacity: 0,
+  duration: 2,
+});
+}
+headerAnimation();
+
+// Hero Animation
+let heroTl = gsap.timeline(); 
+function heroAnimation() {
+  // Left Column Animation
+  heroTl.from(".hero-p", {
+    opacity: 0,
+    y: 80,
+    duration: 0.6,
+    stagger: 0.8,
+    
+  });
+  heroTl.from(".heading-1", {
+    opacity: 0,
+    y: 80,
+    duration: 0.6,
+    stagger: 0.8,
+    
+  });
+  heroTl.from(".highlight-line", {
+    opacity: 0,
+    x: -30,
+    duration: 0.6,
+    stagger: 0.8,
+    
+  });
+  heroTl.from(".hero-title p", {
+    opacity: 0,
+    y: 50,
+    duration: 0.6,
+    stagger: 0.8,
+    
+  });
+  heroTl.from(".left-column .vedio-btn", {
+    opacity: 0,
+    y: 50,
+    duration: 0.6,
+    stagger: 0.8,
+    
+  });
+  // Right Column Animation 
+  gsap.from(".right-column", {
+    opacity: 0,
+    duration: 2,
+    
+  });
+}
+heroAnimation();
+// sider poster
+function sidePosterAnimation() {
+  gsap.from(".side-poster", {
+    x: -200,
+    duration: 1.5,
+    scrollTrigger: {
+      trigger: ".side-poster",
+      scroller: "body"
+    },
+    
+  });
+}
+sidePosterAnimation();
+
+
+
+// Intro Section 
+function introAnimation() {
+gsap.from(".intro-title h2",{
+  y: 70,
+  opacity: 0,
+  duration: 0.5,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".intro-title h2",
+    scroller: "body"
+  }
+});
+gsap.from(".intro-title .primary-text",{
+  y: 70,
+  opacity: 0,
+  duration: 0.5,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".intro-title .primary-text",
+    scroller: "body"
+  }
+});
+gsap.from(".paragraph p",{
+  y: 70,
+  opacity: 0,
+  duration: 0.5,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".paragraph p",
+    scroller: "body"
+  }
+});
+gsap.from(".counter-row .counter-left",{
+  x: -70,
+  opacity: 0,
+  duration: 0.7,
+  scrollTrigger: {
+    trigger: ".counter-row .counter-left",
+    scroller: "body"
+  }
+});
+gsap.from(".counter-row .counter-right",{
+  x: 70,
+  opacity: 0,
+  duration: 0.7,
+  scrollTrigger: {
+    trigger: ".counter-row .counter-right",
+    scroller: "body"
+  }
+});
+// intro images
+gsap.from(".intro-image .intro-image-1",{
+  y: 90,
+  opacity: 0,
+  duration: 1,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".intro-image .intro-image-1",
+    scroller: "body"
+  }
+});
+gsap.from(".intro-image .intro-image2",{
+  y: 200,
+  opacity: 0,
+  duration: 1,
+  stagger: 2,
+  scrollTrigger: {
+    trigger: ".intro-image .intro-image2",
+    scroller: "body"
+  }
+});
+gsap.from(".intro-image .intro-image3",{
+  y: 200,
+  opacity: 0,
+  duration: 1,
+  stagger: 3,
+  scrollTrigger: {
+    trigger: ".intro-image .intro-image3",
+    scroller: "body"
+  }
+});
+gsap.from(".extension-image",{
+  y: 200,
+  opacity: 0,
+  duration: 1,
+  stagger: 3,
+  scrollTrigger: {
+    trigger: ".extension-image",
+    scroller: "body"
+  }
+});
+// Reason Porto
+gsap.from(".dots-image",{
+  y: 40,
+  duration: 1,
+  stagger: 3,
+  scrollTrigger: {
+    trigger: ".dots-image",
+    scroller: "body",
+    start: "30% 60%",
+    end: "200% 300%",
+    pin: true,
+    scrub: 4,
+  }
+});
+gsap.from(".number",{
+  // y: 50,
+  opacity: 0,
+  scale: 2,
+  duration: 1,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".number",
+    scroller: "body",
+  }
+});
+gsap.from(".reason",{
+  x: -80,
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: ".reason",
+    scroller: "body",
+  }
+});
+gsap.from(".choose",{
+  x: -90,
+  opacity: 0,
+  duration: 1,
+  delay: 1,
+  scrollTrigger: {
+    trigger: ".choose",
+    scroller: "body",
+  }
+});
+gsap.from(".proto",{
+  x: -90,
+  opacity: 0,
+  duration: 1,
+  delay: 1.5,
+  scrollTrigger: {
+    trigger: ".proto",
+    scroller: "body",
+  }
+});
+gsap.from(".text-column h3",{
+  x: -90,
+  opacity: 0,
+  duration: 1,
+  delay: 1.5,
+  scrollTrigger: {
+    trigger: ".text-column h3",
+    scroller: "body",
+  }
+});
+gsap.from(".text-column p",{
+  x: -90,
+  opacity: 0,
+  duration: 1,
+  delay: 2,
+  scrollTrigger: {
+    trigger: ".text-column p",
+    scroller: "body",
+  }
+});
+// template row
+gsap.from(".template-column",{
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: ".template-column",
+    scroller: "body",
+  }
+})
+}
+introAnimation();
+
+// Demo Import
+function demoAnimation() {
+  gsap.from(".demo-anim", {
+    y: 70,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".demo-anim",
+      scroller: "body",
+    }
+  })
+  gsap.from(".demo-anim-img img", {
+    x: 70,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".demo-anim",
+      scroller: "body",
+    }
+  })
+}
+// Performance
+gsap.from(".performance-anim img", {
+  y: 140,
+  opacity: 0,
+  duration: 0.9,
+  delay: 1,
+  scrollTrigger: {
+    trigger: ".performance-anim",
+    scroller: "body",
+  }
+})
+gsap.from(".performance-anim-2", {
+  y: 140,
+  opacity: 0,
+  duration: 0.9,
+  delay: 0.5,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".performance-anim-2",
+    scroller: "body",
+  }
+})
+gsap.from(".page-score", {
+  x: -140,
+  opacity: 0,
+  duration: 0.9,
+  delay: 0.5,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".page-score",
+    scroller: "body",
+  }
+})
+// Mobile
+gsap.from(".mobile-anim", {
+  y: 140,
+  opacity: 0,
+  duration: 0.9,
+  delay: 0.3,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".mobile-anim",
+    scroller: "body",
+  }
+})
+gsap.from(".ipad", {
+  x: -140,
+  opacity: 0,
+  duration: 0.9,
+  delay: 0.3,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".ipad",
+    scroller: "body",
+  }
+})
+gsap.from(".iphone", {
+  x: 140,
+  opacity: 0,
+  duration: 0.9,
+  delay: 0.5,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".iphone",
+    scroller: "body",
+  }
+})
+demoAnimation();
+
+// Gallery Section
+function galleryAnimation() {
+  gsap.from(".gallery-anime-1", {
+    y: 140,
+    opacity: 0,
+    duration: 0.9,
+    delay: 0.5,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".gallery-anime-1",
+      scroller: "body",
+    }
+  })
+  gsap.from(".img-gallery", {
+    y: 140,
+    opacity: 0,
+    duration: 0.9,
+    delay: 0.5,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".img-gallery",
+      scroller: "body",
+    }
+  })
+}
+galleryAnimation();
+
+// Header Builder Section
+function headerBuilderAnimation() {
+  gsap.from(".header-builder-anim", {
+    y: 140,
+    opacity: 0,
+    duration: 0.9,
+    delay: 0.5,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".header-builder-anim",
+      scroller: "body",
+    }
+  })
+  gsap.from(".header-builder-anim-1", {
+    y: 140,
+    opacity: 0,
+    duration: 0.9,
+    delay: 0.5,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".header-builder-anim-1",
+      scroller: "body",
+    }
+  })
+  gsap.from(".header-anim-icon", {
+    x: -140,
+    opacity: 0,
+    duration: 0.9,
+    delay: 2.2,
+    scrollTrigger: {
+      trigger: ".header-anim-icon",
+      scroller: "body",
+    }
+  })
+}
+headerBuilderAnimation();
+//LayOut Section
+gsap.from(".lay-out-anim", {
+  y: 140,
+  opacity: 0,
+  duration: 0.5,
+  delay: 0.2,
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".lay-out-anim",
+    scroller: "body",
+  }
+})
+
+// Testimonial Section
+function testimonialAnimation() {
+  gsap.from(".testimonial-anim-text", {
+    scale: 2.7,
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
+    scrollTrigger: {
+      trigger: ".testimonial-anim-text",
+      scroller: "body",
+    }
+  })
+  gsap.from(".testimonial-anim-text-1", {
+    y: 140,
+    opacity: 0,
+    duration: 1,
+    delay: 0.3,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".testimonial-anim-text-1",
+      scroller: "body",
+    }
+  })
+  gsap.from(".swiper-slide, .buy-button", {
+    y: 140,
+    opacity: 0,
+    duration: 1,
+    delay: 0.3,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".swiper-slide",
+      scroller: "body",
+    }
+  })
+}
+testimonialAnimation();
+
+// Professional Support Section
+gsap.from(".support-anim-img", {
+  y: 140,
+  opacity: 0,
+  duration: 1,
+  delay: 0.3,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: ".support-anim-img",
+    scroller: "body",
+  }
+})
+
+// Extenstion Section
+gsap.from(".extension-anim-text", {
+  y: 140,
+  opacity: 0,
+  duration: 1,
+  delay: 0.3,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: ".extension-anim-text",
+    scroller: "body",
+  }
+})
+gsap.from(".box-anim", {
+  y: 140,
+  opacity: 0,
+  duration: 1,
+  delay: 0.3,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".box-anim",
+    scroller: "body",
+  }
+})
+
+// Pricing Section
+gsap.from(".pricing-anim-text", {
+  y: 140,
+  opacity: 0,
+  duration: 1,
+  delay: 0.3,
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".pricing-anim-text",
+    scroller: "body",
+  }
+})
+// TODO================Gsap Animation End===========>
